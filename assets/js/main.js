@@ -8,24 +8,14 @@ const selectHtml = document.getElementById("sceltaDifficolta")
 buttonHtml.addEventListener('click',function(){
     grigliHtml.classList.remove("deactivate")
     grigliHtml.classList.add("active")
+
+
 })
-
-
-let bombeArray = []
-let numeroBombe = 16
-
-while (bombeArray.length < numeroBombe){
-    const numeroCasuale = Math.floor(Math.random() * 100) + 1
-    if (!bombeArray.includes(numeroCasuale)){
-        bombeArray.push(numeroCasuale)
-    }
-}
-
-
 
 
 for(let i = 1; i <= 100; i++){
 
+    
     let casellaHtml =  document.createElement("div")
     casellaHtml.classList = ("cubo") 
     casellaHtml.innerHTML = `<span>${i}</span>`
@@ -50,6 +40,21 @@ for(let i = 1; i <= 100; i++){
     grigliHtml.appendChild(casellaHtml)
 
  }   
+
+
+let bombeArray = []
+let numeroBombe = 16
+
+while (bombeArray.length < numeroBombe){
+    const numeroCasuale = Math.floor(Math.random() * 100) + 1
+    if (!bombeArray.includes(numeroCasuale)){
+        bombeArray.push(numeroCasuale)
+    }
+}
+
+
+
+
 
 
 
