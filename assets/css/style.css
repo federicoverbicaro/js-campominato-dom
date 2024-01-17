@@ -27,10 +27,20 @@
 .row2-header {
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .row2-header>input {
     padding-inline: 20px;
+    padding-block: 2px;
+    background-color: rgb(233, 233, 237);
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-transform: capitalize;
+
+}
+.select{
+    padding-inline: 10px;
     padding-block: 2px;
     background-color: rgb(233, 233, 237);
     border-radius: 5px;
